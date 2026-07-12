@@ -2,10 +2,10 @@ import { StyleSheet, Text, useColorScheme, View } from 'react-native'
 import React from 'react'
 
 const index = () => {
-  const isDarkMode = useColorScheme() === "light"
+  const isDarkMode = useColorScheme() === "dark"
   return (
     <View style={styles.container}>
-      <Text style={isDarkMode ? styles.darktheme : styles.lightmode}>
+      <Text style={isDarkMode ? styles.lightmode : styles.darktheme}>
         Hello world !
       </Text>
     </View>
